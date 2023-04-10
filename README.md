@@ -15,7 +15,7 @@ Note: Currently Mi Band 7 is not working properly
 sudo apt-get install libglib2.0-dev
 pip3 install -r requirements.txt
 ```
-2. Clone [tiny-ECDH-python]()
+2. Clone [tiny-ECDH-python](https://github.com/danielsousaoliveira/tiny-ECDH-python)
 3. Copy ecdh.python and utils.py files from the tiny ECDH to this repository
 4. Find gatt_linux.py on your computer (Should be on /home/user/.local/lib/python3.8/site-packages/gatt)
 5. Make the following changes on the file gatt_linux.py:
@@ -52,6 +52,10 @@ devices
 ```
 6. Run main script
 ```
+# Mi Band 6
+python3 main.py -m MAC_ADDRESS -b 6
+
+# Mi Band 7
 python3 main.py -m MAC_ADDRESS -b 6
 ``` 
 
