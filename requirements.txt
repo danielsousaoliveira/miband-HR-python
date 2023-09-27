@@ -1,4 +1,4 @@
-pycryptocome
+pycryptodome
 dbus-python
 gatt
 matplotlib
